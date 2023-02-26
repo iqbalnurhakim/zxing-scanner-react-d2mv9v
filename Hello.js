@@ -23,7 +23,9 @@ export default function () {
   }
 
   function decodeContinuously() {
-    codeReader.decodeFromImageUrl('/qr-1.jpeg');
+    codeReader.decodeFromImageUrl(
+      'https://raw.githubusercontent.com/iqbalnurhakim/zxing-scanner-react-d2mv9v/main/qr-1.jpeg'
+    );
 
     // codeReader.decodeFromInputVideoDeviceContinuously(
     //   selectedDeviceId,
@@ -80,7 +82,7 @@ export default function () {
     <main class="wrapper">
       <section className="container" id="demo-content">
         <div>
-          <image src="/qr-1.jpeg" />
+          <image src="https://raw.githubusercontent.com/iqbalnurhakim/zxing-scanner-react-d2mv9v/main/qr-1.jpeg" />
         </div>
 
         <label>Result:</label>
